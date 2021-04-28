@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru/en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Post</title>
+</head>
+<body>
+
+    <div class="page" id="page">
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">Контент</a>
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Новости</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Музыка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Обо мне</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <button class="burger" type="button" id="burger">
+                    <span>Открыть навигацию</span>
+                </button>
+                
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="profile.html">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="search.html" method="get">
+                    <input class="search__input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__header">
+                <img id="sidebar_img" src="assets/images/sidebar-header2.jpg" alt="Sidebar">
+            </div>
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img class="profile__avatar" src="assets/images/sidebar-avatar.jpg" alt="Avatar">
+                    <div class="profile__header">
+                        <div class="profile__name">Антон Старосотников</div>
+                        <div class="profile_prof">Блог начинающего Frontend разработчика</div>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="https://www.instagram.com/antonstarosotnikov/" target="_blank">
+                                <img src="assets/images/instagram.svg" alt="Антон Старосотников instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://vk.com/id120535085" target="_blank">
+                                <img src="assets/images/vk.svg" alt="Антон Старосотников vk">
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <div class="profile__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde minima quia numquam labore, nostrum obcaecati libero est, ipsa culpa, distinctio soluta nemo deserunt deleniti. Repellendus quae numquam ut tenetur repellat.
+                        </p>
+                    </div>
+                </div>
+        
+                <nav class="nav__mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">Контент</a>
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Новости</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Музыка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="profile.html">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+            </div>
+            <div class="sidebar__footer">
+                <a class="btn btn--red" href="works.html">Мои работы</a>
+                <button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
+            </div>
+        </aside>
+
+        <main class="main">
+           <div class="container">
+            
+            
+            <article class="post">
+                <div class="post__actions">
+                    <a href="index.html">&larr; вернуться назад</a>
+                    <a href="#" data-modal='share-modal'>
+                       
+                            поделиться
+                            <img class="post__actions--icon" src="assets/images/share.svg" alt="Поделиться">
+                        
+                    </a>
+                </div>
+                <div class="post__header post__header--open">
+                    <h1 class="post__title post__title--mb0">
+                        <a href="#">Зашли на стройку</a>
+                    </h1>
+                    <ul class="post__data">
+                        <li class="post__data-item">
+                            <time datetime="2021-04-19" 22:21>19.04.2021</time>
+                        </li>
+                        <li class="post__data-item">
+                            <a href="#">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="post__text">
+                    <p>Lorem <a href="#">ipsum</a> ipsum dolor sit amet, consectetur adipisicing elit. Optio atque libero quo minima mollitia, repellat aspernatur fugit? Porro soluta ipsa hic consequatur vitae quasi, corporis rerum aperiam! Tenetur, natus, consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque libero quo minima mollitia, repellat aspernatur fugit? Porro soluta ipsa hic consequatur vitae quasi, corporis rerum aperiam! Tenetur, natus, consequatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque libero quo minima mollitia, repellat aspernatur fugit? Porro soluta ipsa hic consequatur vitae quasi, corporis rerum aperiam! Tenetur, natus, consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque libero quo minima mollitia, repellat aspernatur fugit? Porro soluta ipsa hic consequatur vitae quasi, corporis rerum aperiam! Tenetur, natus, consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque libero quo minima mollitia, repellat aspernatur fugit? Porro soluta ipsa hic consequatur vitae quasi, corporis rerum aperiam! Tenetur, natus, consequatur.</p>
+                    <p>
+                        <img src="assets/images/post3.jpg" alt="Зашли на стройку">
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque libero quo minima mollitia, repellat aspernatur fugit? Porro soluta ipsa hic consequatur vitae quasi, corporis rerum aperiam! Tenetur, natus, consequatur.</p>
+                </div> <!--/.post__text-->
+            
+                <div class="related">
+                    <h3 class="post__subtitle">Интересно посмотреть</h3>
+                    <ul class="related__list">
+                        <li class="related__list-item">
+                            <h4 class="related__list-title">
+                                <a href="#">Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</a>
+                            </h4>
+                            <time class="related__list-date" datetime="2021-04-26 20:41">26.04.2021</time>
+                        </li>
+                        <li class="related__list-item">
+                            <h4 class="related__list-title">
+                                <a href="#">Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</a>
+                            </h4>
+                            <time class="related__list-date" datetime="2021-04-26 20:41">26.04.2021</time>
+                        </li>
+                        <li class="related__list-item">
+                            <h4 class="related__list-title">
+                                <a href="#">Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</a>
+                            </h4>
+                            <time class="related__list-date" datetime="2021-04-26 20:41">26.04.2021</time>
+                        </li>
+                        <li class="related__list-item">
+                            <h4 class="related__list-title">
+                                <a href="#">Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</a>
+                            </h4>
+                            <time class="related__list-date" datetime="2021-04-26 20:41">26.04.2021</time>
+                        </li>
+            
+                    </ul>
+                </div><!--/.related-->
+                
+                
+                <h3 class="post__subtitle">Обсуждение</h3>
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <textarea class="form__control form__control--textarea" name="comments-text" placeholder="Текст комментария" data-autoresize></textarea>
+                        <span class="form__line"></span>
+                    </div>
+                    <button class="btn btn--blue btn--rounded btn--sm">Отправить</button>
+                </form>
+                
+                <ul class="comments"> 
+                    <li class="comments__item">
+                        <div class="comments__header">
+                            <img class="comments__avatar" src="assets/images/sidebar-avatar.jpg" alt="">
+                            <div class="comments__author">  
+                                <div class="comments__name">Антон Старосотников</div>
+                                <time class="comments__pubdate" datetime="2021-04-19 23:05">1 неделю назад</time>
+                            </div>
+                        </div>
+                        <div class="comments__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id delectus dolorum nemo quo architecto neque quisquam, tempora maxime. Nulla error excepturi asperiores ex facilis at voluptas quidem deleniti perferendis nihil.
+                        </div>
+                        <button class="comments__reply" type="button">
+                            ответить
+                        </button>
+                        <ul class="comments"> 
+                            <li class="comments__item">
+                                <div class="comments__header">
+                                    <img class="comments__avatar" src="assets/images/sidebar-avatar.jpg" alt="">
+                                    <div class="comments__author">  
+                                        <div class="comments__name">Антон Старосотников</div>
+                                        <time class="comments__pubdate" datetime="2021-04-21 23:05">5 дней назад</time>
+                                    </div>
+                                </div>
+                                <div class="comments__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id delectus dolorum nemo quo architecto neque quisquam, tempora maxime. Nulla error excepturi asperiores ex facilis at voluptas quidem deleniti perferendis nihil.
+                                </div>
+                                <button class="comments__reply" type="button">ответить</button>
+                            </li>   
+                        </ul>
+                    </li> 
+                    <li class="comments__item">
+                        <div class="comments__header">
+                            <img class="comments__avatar" src="assets/images/sidebar-avatar.jpg" alt="">
+                            <div class="comments__author">  
+                                <div class="comments__name">Антон Старосотников</div>
+                                <time class="comments__pubdate" datetime="2021-04-21 23:05">5 дней назад</time>
+                            </div>
+                        </div>
+                        <div class="comments__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id delectus dolorum nemo quo architecto neque quisquam, tempora maxime. Nulla error excepturi asperiores ex facilis at voluptas quidem deleniti perferendis nihil.
+                        </div>
+                        <button class="comments__reply" type="button">ответить</button>
+                    </li>     
+                </ul>
+                
+            </article>
+            
+           </div>
+        </main>
+    </div>
+
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content--story">
+            <video class="modal__video" src="" poster="https://place-hold.it/300x400">
+    
+            </video>
+        </div>
+    </div>
+    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content--contact">
+             <button class="modal__close" type="button">
+                <img src="/assets/images/close.svg" alt="Закрыть">
+    
+            </button>
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <input class="form__control form__control--color" type="text" placeholder="Ваше имя">
+                    <span class="form__line form__line--bgc"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__control form__control--color" type="email" placeholder="Ваш e-mail">
+                    <span class="form__line form__line--bgc"></span>
+                </div>
+                <div class="form__group">
+                    <textarea class="form__control form__control--textarea form__control--color" name="" placeholder="Текст сообщения" data-autoresize></textarea>
+                    <span class="form__line form__line--bgc"></span>
+                </div>
+    
+                <div class="form__footer">
+                    <div class="form__group">
+                        <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+    
+            <ul class="modal__footer">
+               <li>
+                   e-mail: <a href="mailto:anton.starosotnikov@mail.ru">anton.starosotnikov@mail.ru</a>
+               </li>
+               <li>
+                   тел: <a href="tel:+375291675207">+375291675207</a>
+               </li>
+            </ul>
+    
+        </div>
+    </div>
+    <div class="modal" id='share-modal'>
+        <div class="modal__content">
+            
+            <button class="modal__close" type="button">
+                <img src="/assets/images/close.svg" alt="Закрыть">
+            </button>
+            
+            <ul class="social social--share">
+                <li class="social__item social__item--share">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/facebook.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item social__item--share">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/vk1.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item social__item--share">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li class="social__item social__item--share">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/copy.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+    
+    
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
